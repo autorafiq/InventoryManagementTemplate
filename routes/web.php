@@ -7,6 +7,9 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SaleController;
 
 
 
@@ -22,5 +25,8 @@ Route::get('/verifyOtp', [UserController::class, 'verifyOtpPage']);
 Route::get('/userProfile', [UserController::class, 'profilePage']);
 Route::get('/customerPage', [CustomerController::class, 'customerPage'])->name('customerPage');
 Route::get('/productPage', [ProductController::class, 'productPage'])->name('productPage');
+Route::get('/invoicePage', [InvoiceController::class, 'invoicePage'])->name('invoicePage');
+Route::get('/reportPage', [ReportController::class, 'reportPage'])->name('reportPage');
+Route::get('/salePage', [SaleController::class, 'salePage'])->name('salePage');
 
 
