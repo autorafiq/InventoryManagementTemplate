@@ -5,6 +5,10 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ProductController;
+
+
 
 
 Route::get('/', [HomeController::class, 'homePage']);
@@ -16,3 +20,7 @@ Route::get('/resetPassword', [UserController::class, 'resetPasswordPage']);
 Route::get('/sendOtp', [UserController::class, 'sendOtpPage']);
 Route::get('/verifyOtp', [UserController::class, 'verifyOtpPage']);
 Route::get('/userProfile', [UserController::class, 'profilePage']);
+Route::get('/customerPage', [CustomerController::class, 'customerPage'])->name('customerPage');
+Route::get('/productPage', [ProductController::class, 'productPage'])->name('productPage');
+
+

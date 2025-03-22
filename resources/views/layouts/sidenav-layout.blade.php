@@ -78,7 +78,7 @@
         <span class="side-bar-item-caption">Dashboard</span>
     </a>
 
-    <a href="{{url("/customerPage")}}" class="side-bar-item">
+    <a href="{{url("/customerPage")}}" class="side-bar-item {{ request()->routeIs('customerPage') ? 'side-bar-item-active' : '' }}">
         <i class="bi bi-people"></i>
         <span class="side-bar-item-caption">Customer</span>
     </a>
@@ -88,7 +88,7 @@
         <span class="side-bar-item-caption">Category</span>
     </a>
 
-    <a href="{{url("/productPage")}}" class="side-bar-item">
+    <a href="{{url("/productPage")}}" class="side-bar-item {{ request()->routeIs('productPage') ? 'side-bar-item-active' : '' }}">
         <i class="bi bi-bag"></i>
         <span class="side-bar-item-caption">Product</span>
     </a>
